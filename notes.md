@@ -56,3 +56,8 @@ x = (a + b); // rvalue because (a + b) is a noname value.
 * a conversion constructor is when you convert one argument to the default construtor.
   * for example, ``` std::double x = 1 ``` x is a double type while 1 is an int type, but it passes through.
   * you get one free conversion, so be careful when you use a conversion constructor
+* Space ship opperators (<=>)  is similar to boolean opperators. Its a comparason opperator that gives back an ordering
+  * there are 3 ordering values:
+    * 0 (when its equal to each other)
+    * negative number (when its less than)
+    * positive number (when its greater than)
