@@ -1,4 +1,4 @@
-# man this class is going to kill me .(._. ).
+man this class is going to kill me .(._. ).
 ```cpp
 // main.cpp
 std::string learning = "Time to relearn cpp in 6 month and apply it to data structures";
@@ -13,8 +13,8 @@ if (studying == 0){
   std::cout << "good luck in the class and try and not blow your brains out";
 }
 ```
-## notes
-1/28/2025
+# notes
+## 1/28/2025
 ```cpp
 #inclue <iostream>
 int main()
