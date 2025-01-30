@@ -1,4 +1,8 @@
 man this class is going to kill me .(._. ).
+
+NOTE FROM PROFESSOR:
+Neither doubly linked list and singly linked list is better than one another
+
 ```cpp
 // main.cpp
 std::string learning = "Time to relearn cpp in 6 month and apply it to data structures";
@@ -61,3 +65,43 @@ x = (a + b); // rvalue because (a + b) is a noname value.
     * 0 (when its equal to each other)
     * negative number (when its less than)
     * positive number (when its greater than)
+   
+## 1/30/2025
+|KEY TERMS| |
+| --------------------- | --------------------- |
+| Asymptotic analysis | Constant time operations O(1) |
+| Asymptotic efficiency class | Logarithmic time operations O(log2 n) |
+| Worst-case analysis | linear time operations O(n) |
+| Big-Oh notation | N Log N Operations O(n log2 n) |
+| - | Quadratic time operations O(n^2) |
+
+* constant time represent an independent time within the function/program
+* If constant time is larger than logarithmic time, then choose logarithmic. Vice versa
+* Big-Oh notation is represented by O(n), in which n is the size of the container
+* O -> worst case : o -> best case
+
+| Data strucure | Operations |
+| ------------- | ---------- |
+| Arrays (linear) | Create empty |
+| Single linked lists (linear) | Get From element, add or remove front element |
+| Double inked lists (linear) | Get back element, add or remove back element |
+| Binary Trees (logarithmic) | Clear data struture |
+| Has table (binary) | Get/add/remove i^th element |
+
+* When comparing data, your organization should be "good" in which:
+  * Running time - fast
+  * Space usage - small
+* ... But there usually is a trade-off in which:
+  * Faster often mean more memtory for extra pointers
+  * Smaller often means more complex algorithms.
+* Opperators are dealt with powers of 2
+  * 1/2 of something
+  * doubling something
+  * power of 2
+  * log of 2
+  * etc.
+* The most important factor within organization is the number of elements in the data struture (size)
+* The amount of elements is represented by n
+* Then with n, we can find how does the runninng time increases in terms of n.
+* 
+
