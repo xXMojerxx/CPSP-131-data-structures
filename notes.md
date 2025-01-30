@@ -103,5 +103,52 @@ x = (a + b); // rvalue because (a + b) is a noname value.
 * The most important factor within organization is the number of elements in the data struture (size)
 * The amount of elements is represented by n
 * Then with n, we can find how does the runninng time increases in terms of n.
-* 
+* When looking at a graph of a efficient class, every spike represents increasing the memory for the program to run
 
+```cpp
+// Constant loop
+// Return the value of an attribute (e.g., getters) <- look for the loops
+std::size_t size() { return _size; }
+
+// Fixed length loops (ranged based for loop)
+for (usigned int i = 0; i < 10; ++i )
+{
+  cout <, i << '\n';
+}
+
+// Math epxressions (sin(x+y)  is represented as a loop)
+limit =  2 * sin(x+y) + 3 * z;
+```
+```cpp
+// Linear loops
+
+//Consider a list of n elements
+for ( const auto & value : list )
+{
+  cout << vlaue << endl;
+}
+
+```
+```cpp
+// logarithmic loops
+size_t search ( const array<int, 9> & c, int v )
+{
+  size_t s = c.size();
+  size_t current = s /2;
+
+  while ( s! = 0 )
+  {
+    if ( v == c[current] ) return current;
+    if ( s == 1 ) break;
+
+    s = ( s + 1 ) / 2; //represents the logarithmic loop
+
+    if ( v < c[current] ) current -= s / 2;
+    else current += s / 2;
+  }
+
+return numeric_limits<size_t>::max();
+}
+```
+* Data structures should have some type of memory. The bigger the struture, the more memory you need.
+* Running time is based on the memory you need to compute.
