@@ -174,3 +174,14 @@ return numeric_limits<size_t>::max();
     * empty, size, capacity (size represents the ammount inside the vector, capacity represents the size of the vector)
   * Operations
     * insert, erase, clear, push_back, pop_back
+When using an extendable vector, it "moves" all the items from the max vector and doubles the size of the vector, "moving" it all back into the vector.
+
+***Array vs vector - What's the difference?***
+| array | vector |
+| ----- | ------ |
+| Capacity is constant | Two flavors, fixed and extendable capcity |
+| Size is constant | Size changes |
+| Capacity and Size are always the same | Capacity and Size usually differ |
+| Every cell alwats contains an element | Come cells do not contain an element |
+| No insert and erase operations | Elements can be inserted and erased | 
+| Two Template parameters | One template parameter |
