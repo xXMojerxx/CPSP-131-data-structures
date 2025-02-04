@@ -136,4 +136,41 @@ return numeric_limits<size_t>::max();
 
 ## 2/4/2025
 
-
+* Arrays have closed end (has a fixed capacity)
+* Vectors has open ends (has infinite capacity, starting from a certain number)
+### Array abstract data type
+* Capacity - max number of elements that can be stored
+* Size - another name for Capacity - an array's size does not (can not) change
+* Capacity = constant (setting a containters definition at design (compile) time
+* There are two "flavors"
+  * Standard arrays
+    * Smart wrapper around native array
+    * std::array from the <array> library <- (#include <array> [i think])
+    * Ex: std:: array<Student, 10>
+  * Native arrays
+    * aka C-Style or raw array
+    * ***AVOID*** using these
+    * Ex: Student myArray[10];
+* Things you can do to an array:
+  * Construct, destruct, assign
+  * Copy, compare
+  * Iterate
+  * Access elements
+    * at, operator[], front, back ("at" is used without checking, "operator[]" is used with checking)
+  * Query
+    * empty, size (an array can never be empty
+  * Operations
+    * there are none
+### Vecotr abstract data type
+* Capacity - max number of elements that can be stored
+* Size - number of elements that are stored
+* Things you can do to a vector:
+  * Construct, destruct, assign
+  * Copy, compare
+  * Iterate
+  * Access elements
+    * at, operator[], front, back ("at" is used without checking, "operator[]" is used with checking)
+  * Query
+    * empty, size, capacity (size represents the ammount inside the vector, capacity represents the size of the vector)
+  * Operations
+    * insert, erase, clear, push_back, pop_back
