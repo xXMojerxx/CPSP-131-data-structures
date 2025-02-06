@@ -139,6 +139,8 @@ return numeric_limits<size_t>::max();
 * Arrays have closed end (has a fixed capacity)
 * Vectors has open ends (has infinite capacity, starting from a certain number)
 ### Array abstract data type
+* Constuction efficienty capacity is linear
+* Insert efficienty capacity is non existant
 * Capacity - max number of elements that can be stored
 * Size - another name for Capacity - an array's size does not (can not) change
 * Capacity = constant (setting a containters definition at design (compile) time
@@ -162,6 +164,8 @@ return numeric_limits<size_t>::max();
   * Operations
     * there are none
 ### Vecotr abstract data type
+* Construction efficiency capacity is constant
+* Insert effeciency capacity is linear
 * Capacity - max number of elements that can be stored
 * Size - number of elements that are stored
 * Things you can do to a vector:
@@ -169,7 +173,7 @@ return numeric_limits<size_t>::max();
   * Copy, compare
   * Iterate
   * Access elements
-    * at, operator[], front, back ("at" is used without checking, "operator[]" is used with checking)
+    * at, operator[], front, back ("at" does range checking, "operator[]" does not)
   * Query
     * empty, size, capacity (size represents the ammount inside the vector, capacity represents the size of the vector)
   * Operations
@@ -185,3 +189,51 @@ When using an extendable vector, it "moves" all the items from the max vector an
 | Every cell alwats contains an element | Come cells do not contain an element |
 | No insert and erase operations | Elements can be inserted and erased | 
 | Two Template parameters | One template parameter |
+
+## 2/6/2025
+
+```cpp
+// definition of std::vector (cppreference.com)
+template<
+  class T,
+  class Allocator = std::allocator<T>
+> class vector;
+
+namesoace pmr {
+  template< class T >
+  using vector = std::vector<T, std::pmr::polymorphic_allocator<t>>;
+}
+
+// definition of std::array (cppreference)
+template<
+  class T,
+  std::size_t N
+> structarray;
+```
+
+* Every data structure has its own itterator.
+* Conversion construction changes how a
+* Signed integers are negative values to them (-# - #)
+* Unsigned integers are counting numbers (0 - #)
+
+```cpp
+// attribures
+// REMEMBER THESE ATTRIBUTES WHEN CREATING A VECTOR
+std::size_t _zie = 0;
+std::size_t _capacty = 0;
+std::unique_ptr<RawMemory[]> _array = nullptr;
+
+//pointer to data references data in the heap
+
+//another thing to remember
+std::size_t index = position - begin(); // take the position and subtract it from the beginning (creates the index)
+reserve ( _capacity == 0 ? 8 : 2 * _capacity ); // check if the capacity is 0, then add something. If there is something doiuble capacity.
+position = begin() + index; // create new pointer adding new index and begining together.
+
+end()->~T(); // destructor (T() represents class name)
+```
+
+* the attributes to a vector is the size, capacity, and the pointer to an array
+* When inserting values into a vector, you can create your own loop using indes or using your own loop using pointers (reference vecotr example from professor)
+* Dont forget to insert a value when shifting everyting over.
+
