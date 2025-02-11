@@ -3,7 +3,7 @@ class myClass {
     myClass();
     myClass(string name, const int age, string gender);
   private:
-    string firstVariable;
-    int secondVariable;
-    string thirdVariable;
+    string _name;
+    int _age;
+    string _gender;
 }
