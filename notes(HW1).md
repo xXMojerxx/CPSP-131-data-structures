@@ -236,4 +236,3 @@ end()->~T(); // destructor (T() represents class name)
 * the attributes to a vector is the size, capacity, and the pointer to an array
 * When inserting values into a vector, you can create your own loop using indes or using your own loop using pointers (reference vecotr example from professor)
 * Dont forget to insert a value when shifting everyting over.
-
