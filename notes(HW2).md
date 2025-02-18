@@ -54,7 +54,7 @@
 * to create a linked list using dynamic storage, we need a class which has two data members:
     * To hold data
  
-2/18/2025
+## 2/18/2025
 ``` cpp
 template<typename T>
 struct SinglyLinkedList<T>::Node
