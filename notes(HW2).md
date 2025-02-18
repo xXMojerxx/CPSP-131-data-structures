@@ -79,4 +79,4 @@ struct SinglyLinkedList<T>::PrivateMembers
 * you cannot dereference "end", "end" does not point to anything
 * put the attributes inside a class within a strucutre
 * template classes uses ".hxx" to determine the source file for a template class
-* 
+* informal sketching is something thats simplified but explains the process of what happens WITHOUT ANY CODE
