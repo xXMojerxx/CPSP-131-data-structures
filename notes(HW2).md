@@ -12,6 +12,10 @@
 * linked lists are a sequential container
 * linked list's "super power" is insert and removing
 * linked lists are not good at accessing data
+* attributes to a singlely linked list is:
+  * head
+  * tail
+  * size
 * linked lists store data is stored all over the world in nodes
 * when creating a linked list, you create a node with all the data in it, finding a spot in the world to put it in.
 * "0" represents the end of a linked list (representing null)
@@ -49,4 +53,30 @@
 * next, make current tail point ot new node, then finally point to new node.
 * to create a linked list using dynamic storage, we need a class which has two data members:
     * To hold data
-    * 
+ 
+2/18/2025
+``` cpp
+template<typename T>
+struct SinglyLinkedList<T>::Node
+{
+ Node() = default;
+ Node( T value ) : _data{ std::move(value) ) {}
+
+T _data = T{};
+Node * _next = nullptr;
+};
+// This is the definition of a singular linked list null-terminated
+
+template<typename t>
+struct SinglyLinkedList<T>::PrivateMembers
+{
+ Node * _head = nullptr;
+ Node * _tail = nullptr;
+ std::size_t _size = 0;
+};
+// This is the default construction of a singly linked list null-terminated.
+```
+* you cannot dereference "end", "end" does not point to anything
+* put the attributes inside a class within a strucutre
+* template classes uses ".hxx" to determine the source file for a template class
+* 
