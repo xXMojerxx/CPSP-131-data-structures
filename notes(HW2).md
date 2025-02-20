@@ -80,3 +80,19 @@ struct SinglyLinkedList<T>::PrivateMembers
 * put the attributes inside a class within a strucutre
 * template classes uses ".hxx" to determine the source file for a template class
 * informal sketching is something thats simplified but explains the process of what happens WITHOUT ANY CODE
+
+## 2/20/2025
+
+* make sure to nreate and populate a new node when inserting anything into any type of itterating list.
+* & = reference
+* &* = reference to pointer
+* circular linked list:
+  * head ("beginning" of the list (first value in a node))
+  * tail ("end" of the list (last value other than NULL in a node))
+  * size (length of the list)
+  * sentinel (node used to itterate between each node, at the beginning to start the pointers)
+* singularly liked list:
+  * head ("beginning" of the list (first value in a node))
+  * tail ("end" of the list (last value other than NULL in a node))
+  * size (length of the list)
+* 
