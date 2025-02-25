@@ -95,4 +95,110 @@ struct SinglyLinkedList<T>::PrivateMembers
   * head ("beginning" of the list (first value in a node))
   * tail ("end" of the list (last value other than NULL in a node))
   * size (length of the list)
-* 
+
+## 2/25/2025
+* itterators are a fancy word for pointers
+* not all pointers are itterators
+* itterators are a member of a data scruture, can be used for most data strucutres.
+* itterators are also used to access data by the user
+* .end() is a dangling pointer (used to check if you are at the end of a list/vector)
+* Containers - abstract data strucutre that store collection of elements
+* Iterator - abstract process of looping through collection of elements
+``` cpp
+for (p = C.Begin(); p !=C.end(); ++p)
+{
+ p->do_something();
+}
+
+// a basic itterator used to go to an array/vector
+
+//for loop
+//STL vector & STL single linked list example
+#include <vector>
+#include <forward_list>
+int main()
+{
+ std::vector<int> C = {-2, 5 , -7, 0, 10, 100};
+ std::forwardsList<int> C = {-2, 5 , -7, 0, 10, 100};
+ int sum = 0;
+ for (auto & p=C.begin(); p!=C.end(); ++p) // auto is used to default the type of list used
+ {
+  sum+= *p
+ }
+}
+
+//ranged based for loop
+//STL vector & STL single linked list example
+
+#include <vector>
+#include <forward_list>
+int main()
+{
+ std::vector<int> C = {-2, 5 , -7, 0, 10, 100};
+ std::forwardsList<int> C = {-2, 5 , -7, 0, 10, 100};
+ int sum = 0;
+ for (const auto & element : C) // auto is used to default the type of list used
+ {
+  sum+= element;
+ }
+}
+```
+* itterator categories
+* iterators are objects:
+  * that can iterate ofver elements within a sequence via common interface
+  * adapted from ordinary pointers
+* anything that behaves like an iterator is-a iterator
+  * ordinary pointer is-a terator
+* however, iterators have even more abilities
+* data of the itterator is a raw pointer with more things along side it.
+
+| iterator categories heigharchy |
+| - |
+| input iterator - output iterator |
+| forward iterator |
+| biodirectional iterator |
+| random-access iterator |
+| continuout iterator <- added in c++20 |
+
+| iterator category | ability | providers |
+| - | - | - |
+| outputer iterator | writes forwards | ostream, inserter |
+| input iterator | reades forwards once | Istream |
+| forwards iterator | reads forward | forward list, unordered containers |
+| biodirectioal iterator | reads forwards and backwards | list, set, multiset, map, multimap |
+| random-access iterator | reads with random access | array, vector, deque, string, c-style array |
+
+| iterator cabability - expression | effect |
+| - | - |
+| *iter | procides access to the actuall elements |
+| iter->member | provides access to a memver of the actual element
+| ++iter | steps forward (returns new position) |
+| iter++ | steps forwads (returns old position) |
+| --iter | steps backward (returns new position) |
+| iter-- | steps backward (returns old position) |
+| iter1 == iter2 | returns wheter two iterators are equal |
+| iter1 != iter2 | returns whether two iterators are not equal |
+| TYPE() | Creates iterator (default contrcutor) |
+| TYPE(iter) | copies iterator (copy contstructor) |
+| iter1 = iter2 | assigns an iterator |
+| iter[n] | provides access to the element that has index n |
+| iter+=n | steps n elements forwards ( or backward, if n is negative) |
+| iter-=n | steps n elements backwards ( or forward, if n is negative) |
+| iter+n | returns the iterator of the nth next element |
+| n+iter | returns the iterator of the nth next element |
+| iter-n | returns the iterator of the nth previous element |
+| iter1 - iter2 | returns the distance between iter1 and iter2 |
+| iter1 < iter2 | returns whether iter1 is before iter2 |
+| iter1 > iter2 | returns whether iter1 is after iter2 |
+| iter1 <= iter2 | returns whether iter1 is not before iter2 |
+| iter1 >= iter2 | returns whether iter1 is not after iter2 |
+
+* each STL contrainter, call it C, has an associated class iterator
+  * begin(), rbegin(): returns an iterator to the first element
+  * end(), rend(): returns an iterator to an imagination position just after the last element
+* An iterator behaves like apointer to an element
+  * ```*p``` returns the element referenced by this iterator; access current element
+  * ++p, p++: advances to the next element
+
+ 
+
