@@ -98,7 +98,7 @@ struct SinglyLinkedList<T>::PrivateMembers
 
 ## 2/25/2025
 * itterators are a fancy word for pointers
-* not all pointers are itterators
+* not all itterators are pointers
 * itterators are a member of a data scruture, can be used for most data strucutres.
 * itterators are also used to access data by the user
 * .end() is a dangling pointer (used to check if you are at the end of a list/vector)
@@ -170,28 +170,34 @@ int main()
 
 | iterator cabability - expression | effect |
 | - | - |
-| *iter | procides access to the actuall elements |
-| iter->member | provides access to a memver of the actual element
-| ++iter | steps forward (returns new position) |
-| iter++ | steps forwads (returns old position) |
-| --iter | steps backward (returns new position) |
-| iter-- | steps backward (returns old position) |
-| iter1 == iter2 | returns wheter two iterators are equal |
-| iter1 != iter2 | returns whether two iterators are not equal |
-| TYPE() | Creates iterator (default contrcutor) |
-| TYPE(iter) | copies iterator (copy contstructor) |
-| iter1 = iter2 | assigns an iterator |
-| iter[n] | provides access to the element that has index n |
-| iter+=n | steps n elements forwards ( or backward, if n is negative) |
-| iter-=n | steps n elements backwards ( or forward, if n is negative) |
-| iter+n | returns the iterator of the nth next element |
-| n+iter | returns the iterator of the nth next element |
-| iter-n | returns the iterator of the nth previous element |
-| iter1 - iter2 | returns the distance between iter1 and iter2 |
-| iter1 < iter2 | returns whether iter1 is before iter2 |
-| iter1 > iter2 | returns whether iter1 is after iter2 |
-| iter1 <= iter2 | returns whether iter1 is not before iter2 |
-| iter1 >= iter2 | returns whether iter1 is not after iter2 |
+| ***FORWARD ITTERATOR*** | ***FORWARD ITTERATOR*** |
+| ```*iter``` | ```procides access to the actuall elements```  |
+| ```iter->member``` | ```provides access to a memver of the actual element``` |
+| ```++iter``` | ```steps forward (returns new position)``` |
+| ```iter++``` | ```steps forwads (returns old position)``` |
+| ***BIDIRECTIONAL ITTERATOR*** | ***BIDIRECTIONAL ITTERATOR*** | 
+| ```--iter``` | ```steps backward (returns new position)``` |
+| ```iter--``` | ```steps backward (returns old position)``` |
+| ***BIDIRECTIONAL ITTERATOR*** | ***BIDIRECTIONAL ITTERATOR*** | 
+| ```iter1 == iter2``` | ```returns wheter two iterators are equal``` |
+| ```iter1 != iter2``` | ```returns whether two iterators are not equal``` |
+| ```TYPE()``` | ```Creates iterator (default contrcutor)``` |
+| ```TYPE(iter)``` | ```copies iterator (copy contstructor)``` |
+| ```iter1 = iter2``` | ```assigns an iterator``` |
+| ***FORWARD ITTERATOR*** | ***FORWARD ITTERATOR*** |
+| ***RANDOM ACCESS MEMORY*** | ***RANDOM ACCESS MEMORY*** |
+| ```iter[n]``` | ```provides access to the element that has index n``` |
+| ```iter+=n``` | ```steps n elements forwards ( or backward, if n is negative)``` |
+| ```iter-=n``` | ```steps n elements backwards ( or forward, if n is negative)``` |
+| ```iter+n``` | ```returns the iterator of the nth next element``` |
+| ```n+iter``` | ```returns the iterator of the nth next element``` |
+| ```iter-n``` | ```returns the iterator of the nth previous element``` |
+| ```iter1 - iter2``` | ```returns the distance between iter1 and iter2``` |
+| ```iter1 < iter2``` | ```returns whether iter1 is before iter2``` |
+| ```iter1 > iter2``` | ```returns whether iter1 is after iter2``` |
+| ```iter1 <= iter2``` | ```returns whether iter1 is not before iter2``` |
+| ```iter1 >= iter2``` | ```returns whether iter1 is not after iter2``` |
+| ***RANDOM ACCESS MEMORY*** | ***RANDOM ACCESS MEMORY*** |
 
 * each STL contrainter, call it C, has an associated class iterator
   * begin(), rbegin(): returns an iterator to the first element
@@ -200,5 +206,45 @@ int main()
   * ```*p``` returns the element referenced by this iterator; access current element
   * ++p, p++: advances to the next element
 
- 
+## 2/27/2025
 
+* an itterator has one attribute: a pointer
+* you can use library functions to indicate what type of iterator is present within the array/list
+* pre-increment : change the value before using it
+* post-increment : change the value after using it
+* post-increment moves and copies the data and uses the copy of the orriginal data as your increment, then modify the orriginal
+* pre-decrement : change the value before using it
+* post-decrement : change the value after using it
+* post-decrement moves and copies the data and uses the copy of the orriginal data as your decrement, then modify the orriginal
+* operator* : returns a reference to the Node's data (not the Node itself)
+* operator-> : returns a pointer to the Node's data (not the Node itself)
+* operator== : returns if two itterators are equal to one another
+* auxiliary iterator function:
+  * advance(), next(), prev(), distance()
+  * gives all iterators some abilites uaualy provided only for random-accessiterators
+    * to step more than one element forward (or backward)
+    * to process the difference between iterators
+* ```advance()```
+  * ```void advance (InputIterator& pos, Dist n)```
+  * modifies the iterator pos
+  * increments (or decrements) pos n amount of times
+  * lets the iterator step forward (or backward) more than one element
+  * still an O(n) operation for list and O91) for vectors and arrays.
+* ```next()```
+  * ```ForwardsIterator next(ForwardIterator pos, Dist n=1)```
+  * returns the position if moved forward n positions
+  * does not modify the iterator pos
+  * next() words with forward, bidirection, or random-access interator
+* ```prev()```
+  * ```BidirectionalIterator prev(BidirectionalIterator pos, Dist n=1)```
+  * returns the position if kmoved backward n positions
+  * does not modify the iterator pos
+  * prev() works with vidirectiona, or random-access iterators but not forward iterators.
+* ```distance()```
+  * ```Dist distance (InputIterator pos1, IntputIterator pos2)```
+  * returns the difference between two iterators
+  * Still an O(n) operator for list and O91) for vectos and arrays
+  * Consider:
+    * std::distance( c.begin(), c.end() ) == c.size()
+    * std::distance( c.end(), c.being() ) is a logic error (you cannot go backward)
+  
