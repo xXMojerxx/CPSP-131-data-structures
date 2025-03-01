@@ -1,9 +1,16 @@
 //main function
-#include <iostream>
-#include <map>
+#include <algorithm>                                                      // move( range ), move_backward( range )
+#include <array>
+#include <cstddef>                                                        // size_t
+#include <exception>
+#include <forward_list>
+#include <iomanip>                                                        // setprecision()
+#include <iostream>                                                       // boolalpha(), showpoint(), fixed(), setw()
+#include <list>
+#include <sstream>                                                        // ostringstream
+#include <string>                                                         // string, to_string()
+#include <utility>                                                        // move( object )
 #include <vector>
-
-#include <code-notes.h>
 
 int main() {
   std::string stringValue = "this is a string";
