@@ -17,3 +17,4 @@ if (studying == 0){
   std::cout << "good luck in the class and try and not blow your brains out";
 }
 ```
+# PLEASE USE THIS TO STUDY BETTER https://www.youtube.com/watch?v=pXHnLbyDKNQ
