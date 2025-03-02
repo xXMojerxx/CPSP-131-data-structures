@@ -18,8 +18,8 @@ std::string myClass::getGender() {
 template<typename T>
 struct SinglyLinkedList<T>::Node
 {
- Node() = default;
- Node( T value ) : _data{ std::move(value) ) {}
+ Node() = default; // cerate the node presented as a default.
+ Node( T value ) : _data{ std::move(value) ) {} // store the value within an array/vetor notation under the variavble "_data"
 
 T _data = T{};
 Node * _next = nullptr;
