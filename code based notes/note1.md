@@ -1,5 +1,3 @@
-# coding based notes
-
 ## Coding example
 ```cpp
 auto distance = std::abs(lhs - rhs);
