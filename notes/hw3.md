@@ -34,4 +34,9 @@
 
 * first 30 mins was doing aboslutely nothing but just reasuring information given
 * and mostly just going over code....
+* yup thats it...
+
+## 3/11/2025
+* The attributes of a stack and queue differ bettwen the different type of container (UnderlyingContainer)
+* If the stack is vector base, the attribute is a vector
 * 
