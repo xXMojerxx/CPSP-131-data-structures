@@ -37,6 +37,31 @@
 * yup thats it...
 
 ## 3/11/2025
-* The attributes of a stack and queue differ bettwen the different type of container (UnderlyingContainer)
+* The attributes of a stack and queue differ bettwen the different type of sequence container (UnderlyingContainer)
 * If the stack is vector base, the attribute is a vector
-* 
+* we did an inclass assignment durring this class
+
+## 3/13/2025
+* recursion is when you repeat the same function, or create a loop
+```cpp
+// basic loop functions
+//for loop
+for (auto itr begin(); itr != end(); ++itr)
+{
+ cout << *itr;
+}
+//while loop
+auto itr = being()
+do {
+++itr;
+} while (itr != end()
+```
+* every loop has to have an:
+  * initilization ``` auto itr begin() ```
+  * termination ``` itr != end() ```
+  * advance ``` ++itr ```
+*  when implementing a recusion function, make sure to comment where the base, the visit, and the recursive case are.
+*  base case - when the loop stops
+*  visit case - what the loop is going to do 
+*  recursive case - the advancement of the loop (call ths same function again)
+*  public function- initilizes the function and kicks of the loop
