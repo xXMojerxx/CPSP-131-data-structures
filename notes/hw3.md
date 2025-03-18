@@ -64,4 +64,19 @@ do {
 *  base case - when the loop stops
 *  visit case - what the loop is going to do 
 *  recursive case - the advancement of the loop (call ths same function again)
-*  public function- initilizes the function and kicks of the loop
+*  public function - initilizes the function and kicks of the loop
+
+3/18/2025
+* another week of coping that i wont pass this class
+* going over the midterms and asnswering questions
+* basically midterm review
+* make sure to read the question thoughouly
+* make sure to look for the qrong answers first so you can narrow down on the correct answer
+* make sure to watch out for the phrasing for the question as well
+* no actual programming, but mainly fill in the blank within the function.
+* defend your answer for getting short answer points
+* ex: would rather insert into vector bc inserts at linear time rather than list (which goes into constant time)
+
+3/20/2025
+* taking midterm exam
+* yay very fun... hahah....
