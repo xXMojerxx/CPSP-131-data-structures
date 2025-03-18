@@ -18,7 +18,7 @@
   * pop() - remove elements in the opposide order in which they were inserted ("Last in, first out")
   * top() - view the most recent element inserted
 
-*Queue Concepts
+* Queue Concepts
 * FIFO - Fisrt In, First Out (Queue)
   * push() - insert elements into the stack
   * pop() - remove elements in the same oder in which they were inserted ("fisrt in, first out")
