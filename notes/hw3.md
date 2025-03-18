@@ -66,7 +66,7 @@ do {
 *  recursive case - the advancement of the loop (call ths same function again)
 *  public function - initilizes the function and kicks of the loop
 
-3/18/2025
+## 3/18/2025
 * another week of coping that i wont pass this class
 * going over the midterms and asnswering questions
 * basically midterm review
@@ -77,6 +77,6 @@ do {
 * defend your answer for getting short answer points
 * ex: would rather insert into vector bc inserts at linear time rather than list (which goes into constant time)
 
-3/20/2025
+## 3/20/2025
 * taking midterm exam
 * yay very fun... hahah....
