@@ -158,7 +158,7 @@ int main()
 | forward iterator |
 | biodirectional iterator |
 | random-access iterator |
-| continuout iterator <- added in c++20 |
+| continuous iterator <- added in c++20 |
 
 | iterator category | ability | providers |
 | - | - | - |
