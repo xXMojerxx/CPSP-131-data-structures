@@ -6,7 +6,7 @@
 * apparently, a DLL is faster (by a little bit) than a SLL since a DLL node is bigger than a SLL node.
 * im so ***b o r e d...***
 * maybe im not fit for comp sci...
-* here is some actual things:
+* ***v ACTUAL NOTES START HERE v***
 * I deed a data struture that holds definitions of terms, but i only have the name of the term. How can I find its definition efficiently?
   * You can use vector for most things, but understnad how to use it correctly with the term and create keys for each thing
   * the user gives something, then you use a sequence container and a function of some kind to solve a problem
