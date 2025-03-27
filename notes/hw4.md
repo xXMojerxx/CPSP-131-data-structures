@@ -1,5 +1,6 @@
 # notes
 ## 3/25/2025
+
 * went over 'big O' notation as well as visual representation for each inerstion for each type of sequence container
 * thats basically it...
 * i wish my professor went over code and coded in class since im going to actually blow up and die this shit hard.
@@ -41,5 +42,24 @@ definition = dictionary ["apple"] // interms of a string
   * Remember, in all sequence containers, you have linear complexity
 * Drawback
   * You cant' modify value (sets) or keys( maps) directly
-    * Would corrupt the automatic sorty of the elements
-  
+    * Would corrupt the automatic sort of the elements
+
+## 3/27/2025
+
+* among us
+* yeah chat im cooked ( . -.)
+* n-arry tree - node based tree with n amounts of "children" (nodes in nodes)
+* Abilities of maps and multimaps
+* Maps and multimaps sory hteir elements automatically
+* Have good performance, O(log n), when searching for elements that have a certain key.
+* when inserting into a tree, the insertion has to be at the end of the tree
+* if you try and insert a duplicate key, abstraction says to do nothing.
+* Sets:
+  * Node based struture containing **values**
+  * Each node contains a left, right and parent
+  * sorted such that
+    * Nodes to the left are less
+    * Nodes to the right are greater
+* Maps:
+* Basically the same thing but with values associated with the "key".
+
