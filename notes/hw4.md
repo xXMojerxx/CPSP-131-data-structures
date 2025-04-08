@@ -63,3 +63,31 @@ definition = dictionary ["apple"] // interms of a string
 * Maps:
 * Basically the same thing but with values associated with the "key".
 
+## 4/8/2025
+
+* man... spring break is over... (oh well)
+* is the crashout imminent?
+* attributes of a tree is ***root , size***
+* root - node without parent (usually top node)
+* internal node - node iwth at least one child (node)
+* external node - node without children (nodes)
+* Ancestors of a node - parents/ nodes attatched to other nodes
+* depth of a node - number of ancestors (number of attacted nodes to get to the bottom.)
+* height of tree - maximum depth
+* decendant of a node - child, grandchild, grand-grandchild, etc. (all nodes bellow node presented)
+* subtree - the parting of the node presented (b -> a,b [where] a -> left subtree & b -> right subtree)
+* sibling - nodes that share a parent, same level
+* binanry tree's internal nodes have at most two children
+* children of internal node is called left child and right child
+* types of binanry tree:
+  * Full - if every node has 0 or two children
+  * Complete - all levels are full except possibly the last level
+  * Perfect - all internanl nodes have 2 children and leaf nodes are at the same level
+* efficiency class for binany tree with O(h) where h = height of tree
+* going over a program.. just easy shit...
+* basically the smae as what i am currently learning in math 170A (discrete structures / math strutures)
+* Preorder traversal - node is visited before its desendants
+* application - print a strutured document
+* Postoder traversal - all desendants are visited before moving
+* Inorder traversal - vistited after its left subtree and before its right subtree
+* euler tour traversal techinique - touching each node three times
