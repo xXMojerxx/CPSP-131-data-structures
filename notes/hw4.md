@@ -91,3 +91,10 @@ definition = dictionary ["apple"] // interms of a string
 * Postoder traversal - all desendants are visited before moving
 * Inorder traversal - vistited after its left subtree and before its right subtree
 * euler tour traversal techinique - touching each node three times
+
+## 4/17/2025
+
+* sooooo i kind of missed 2 days of class (both bc i slepted in)...
+* we are going to roll with it and not cope at all :3
+* binary search tree's superpower is searching
+* 
