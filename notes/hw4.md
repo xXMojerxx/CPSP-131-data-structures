@@ -97,4 +97,30 @@ definition = dictionary ["apple"] // interms of a string
 * sooooo i kind of missed 2 days of class (both bc i slepted in)...
 * we are going to roll with it and not cope at all :3
 * binary search tree's superpower is searching
-* 
+* yeah that was basically it... i forgor to take notes
+
+## 4/22/2025
+* just coping at the fact that im not passing this class, so.. .see you guys all next semester :3
+* hopefully i pass all my other classes....
+* unorder contianers - no order to containers (duh)
+* takes away responsibility, no sequence to the container.
+* YOU BETTER DO HW5 AT LEAST
+* hash tables - is kind of like an associative container
+* take responsiblity of the ordering and remove it. Hashtabe has no ordering process.
+* when implementnig a has table, you use  unordered map
+* linked cannot be more than 3 elements
+* In unorderdcontainers, elements have no defined order
+  * If you insert tjree elelemnts, they might have any oder when you iterate over all the elements int he container.
+  * If you insert a fourth elemen,  the order of the leemnts preivousely inserted might hcange.
+  * The only important fact is that a a specific element is somewhere in the container
+  * Even when you have two containers with equal eelements inside, the oder might be different.
+  * Think of it as like a bag
+* Unorderd containers are typically implemented as a hash table.
+  * Internally,  the container is an array of linked lists.
+* Using a hash function, the position of an element in the array gets processesd.
+  * The goal is that each element has its won position so that you have fast access to each eleemnt provided that the has function is fast
+  * Multiple elements migth ahve the same position because such a fas perfect has function is not elways possible or might require that the array somumes a hugh amount of memory.
+* Major advantage of unordered containers
+* Finding an element iwht a specific value is even faster than for associative containers.
+  * The use of unordered containers provides amortized constant complexity, provided that you  have  agood has function
+  * However, providing a good has function is easy
