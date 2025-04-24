@@ -111,9 +111,9 @@ definition = dictionary ["apple"] // interms of a string
 * linked cannot be more than 3 elements
 * In unorderdcontainers, elements have no defined order
   * If you insert tjree elelemnts, they might have any oder when you iterate over all the elements int he container.
-  * If you insert a fourth elemen,  the order of the leemnts preivousely inserted might hcange.
+  * If you insert a fourth element,  the order of the elemnts previousely inserted might change.
   * The only important fact is that a a specific element is somewhere in the container
-  * Even when you have two containers with equal eelements inside, the oder might be different.
+  * Even when you have two containers with equal elements inside, the oder might be different.
   * Think of it as like a bag
 * Unorderd containers are typically implemented as a hash table.
   * Internally,  the container is an array of linked lists.
@@ -124,3 +124,32 @@ definition = dictionary ["apple"] // interms of a string
 * Finding an element iwht a specific value is even faster than for associative containers.
   * The use of unordered containers provides amortized constant complexity, provided that you  have  agood has function
   * However, providing a good has function is easy
+
+## 4/24/2025
+* yeah... the crash out is real
+* anyways... i really need to study up on c++ and python next semester... really need to get coding down in general
+* also, planning to do some drawings until the end of the sememser... (1 per day until april) i hope it goes well
+* if we find a constant less than log(n), then its an advantage, if not, its at a dissadnvantage
+* Collisions - when two different keys get assigned to the same table index
+  * 30 % 7 = 16% 7 = 2
+* Solutions to deal with collsiions
+  * Chaining
+  * Open addressing (Probing)
+    * Linear probrin
+    * Quadratic probing
+  * Revent collsiions completly - Direct Hashing
+* Linear probing - only have  asingle array
+* If bucket is occupied, search forward for a free bucket
+* Search is circular
+  * When end of table is reached, wrap around to beginning
+* Search fails if starting point is reached
+* dissadvantage of linear probing is clumps of data
+* advantage of probing is no lists
+* Quadratic probing - same approach as linear probing, but probe sequence is different
+* Linear probing sequence (H = key%N)
+   * index = H, H+1, H+2, H+3...
+   * index (i) = [H + 1]%N, i = 0,1,2...
+* Quadratic probing sequence"
+   * index (i) = [H + c1 * i + c2 *i^2]%N, i = 0,1,2...
+   * c1 and c2 are constatnts that are given
+     * For instance c1 = 1, c2 = 1
