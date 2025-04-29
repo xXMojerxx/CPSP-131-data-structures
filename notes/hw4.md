@@ -153,3 +153,16 @@ definition = dictionary ["apple"] // interms of a string
    * index (i) = [H + c1 * i + c2 *i^2]%N, i = 0,1,2...
    * c1 and c2 are constatnts that are given
      * For instance c1 = 1, c2 = 1
+
+## 4/29/2025
+
+* graphs a re 2 dimensional structure
+* there are directed graphs and undirected graphs
+* directed graphs - usually indicated by arrow, shows a direction where the data moves
+* undirected graphs - any flow between a line, no edges have no orientation
+* graphs can include "islands" - basically solo nodes that dont connect to everything
+* not all graphs have oto connect all nodes together
+* sparce graph - not all nodes are connected to each other, just paths connecting from one node to another
+* directed acyclic graphs - directed graph with no cycle
+* bipartite graph - verticies can be plit nito two indipendent groups
+* adjacent matrix - simple way yo represent a graph
