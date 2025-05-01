@@ -166,3 +166,10 @@ definition = dictionary ["apple"] // interms of a string
 * directed acyclic graphs - directed graph with no cycle
 * bipartite graph - verticies can be plit nito two indipendent groups
 * adjacent matrix - simple way yo represent a graph
+
+## 3/1/2025
+
+* DFS - depths first searching
+* look for all nodes possible without repeating
+* BFS - look for all  nodes attatching then move to the next
+* basically  discrete structures
