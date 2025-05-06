@@ -167,9 +167,13 @@ definition = dictionary ["apple"] // interms of a string
 * bipartite graph - verticies can be plit nito two indipendent groups
 * adjacent matrix - simple way yo represent a graph
 
-## 3/1/2025
+## 5/1/2025
 
 * DFS - depths first searching
 * look for all nodes possible without repeating
 * BFS - look for all  nodes attatching then move to the next
 * basically  discrete structures
+
+## 5/6/2025
+
+* for final exam.... make sure to put file in .csv file (like im going to be able to do it in the first place)
