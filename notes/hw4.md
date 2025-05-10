@@ -177,3 +177,5 @@ definition = dictionary ["apple"] // interms of a string
 ## 5/6/2025
 
 * for final exam.... make sure to put file in .csv file (like im going to be able to do it in the first place)
+* The most common reasons for failutre is failure to read. <-  remember that for the practice assignment (final exam)
+* mt_vector.push_back( object ); (an answer to one of the questions)
